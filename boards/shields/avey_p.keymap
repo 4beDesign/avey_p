@@ -13,8 +13,13 @@
         compatible = "zmk,keymap";
 
         default_layer {
-#            display-name = "Default";
-            bindings = <
+// ------------------------------------------------------------------------------------------------------------
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
+// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
+// |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+//                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
+bindings = <
 &kp ESC &kp Q &kp L &kp SLASH &kp COMMA &kp DOT &kp G &kp D &kp B &kp Y &kp P &kp LGUI
 &mt LSHIFT LEFT &kp I &kp U &kp E &mt LSHIFT O &kp MINUS &kp R &mt RSHIFT T &kp N &kp S &kp H &mt RSHIFT UP
 &mt LCTRL RIGHT &kp Z &kp X &kp C &mt LCTRL V &lt 2 SEMI &kp W &mt RCTRL M &kp F &kp J &kp BSLH &mt RCTRL DOWN
@@ -23,15 +28,5 @@
 
             >;
         };
-#        function_layer {
-#            display-name = "Function";
-#            bindings = <
-#            &kp TILDE &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8  &kp F9    &kp F10   &kp F11   &kp F12   &trans   &kp END
-# &kp C_MUTE  &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans    &trans   &bootloader
-# &bt BT_CLR  &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans              &trans   &trans
-# &bt BT_PRV  &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans    &trans   &trans
-# &bt BT_NXT  &trans    &trans
-#            >;
-#        };
     };
 };
