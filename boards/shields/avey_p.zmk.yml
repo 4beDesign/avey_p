@@ -1,0 +1,8 @@
+file_format: "1"
+id: avey_p
+name: avey_p
+type: shield
+url: https://
+requires: [nice_nano]
+features:
+  - keys
