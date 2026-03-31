@@ -1,0 +1,6 @@
+if SHIELD_avey_p
+
+config ZMK_KEYBOARD_NAME
+    default "avey_p"
+
+endif
