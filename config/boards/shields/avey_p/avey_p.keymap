@@ -34,15 +34,15 @@ bindings = <
         };
         sub_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  ,  |  7  |  8   |  9   |  .   |                   |  PGUP|  HOME |  MUP  |  END | MACC0 |  WIN  |
-// | SHIFT |  *  |  4  |  5   |  6   |  -   |                   |  PGDN|  MLEFT|  MDWN |MRIGHT| MACC1 | SHIFT |
-// | CTRL  |  `  |  1  |  2   |  3   |  ;   |                   |  MBT3|  LEFT |  UP   |RIGHT | MACC2 | CTRL  |
+// |  ESC  |  ,  |  7  |  8   |  9   |  .   |                   |  PGUP|  HOME |  MUP  |  END | F1 |  WIN  |
+// | SHIFT |  *  |  4  |  5   |  6   |  -   |                   |  PGDN|  MLEFT|  MDWN |MRIGHT| F2 | SHIFT |
+// | CTRL  |  `  |  1  |  2   |  3   |  ;   |                   |  MBT3|  LEFT |  UP   |RIGHT | F3 | CTRL  |
 //               | SQT | EQAL | ALT  |  0   |                   |  MBT1|  ALT  |  DOWN |PSCR  |
 // |LT2 SP |           | BKSP | DEL  |                                 |  MBT2 | ENT   |              | LT2 SP|
 bindings = <
-&trans &kp COMMA &kp N7 &kp N8 &kp N9 &trans &kp PG_UP &kp HOME &mmv MOVE_UP &kp END &mkp ACCEL0 &trans
-&trans &kp KP_MULTIPLY &kp N4 &kp N5 &kp N6 &trans &kp PG_DN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mkp ACCEL0 &trans
-&trans &kp KP_PLUS &kp N1 &kp N2 &kp N3 &trans &mkp MB3 &kp LEFT &kp UP &kp RIGHT &mkp ACCEL2 &trans
+&trans &kp COMMA &kp N7 &kp N8 &kp N9 &trans &kp PG_UP &kp HOME &mmv MOVE_UP &kp END &kp F1 &trans
+&trans &kp KP_MULTIPLY &kp N4 &kp N5 &kp N6 &trans &kp PG_DN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp F2 &trans
+&trans &kp KP_PLUS &kp N1 &kp N2 &kp N3 &trans &mkp MB3 &kp LEFT &kp UP &kp RIGHT &kp F3 &trans
 &trans &trans &trans &kp N0 &mkp MB1 &trans &kp DOWN &kp PSCRN
 &lt 2 SPACE &trans &trans &mkp MB2 &trans &lt 2 SPACE
             >;
