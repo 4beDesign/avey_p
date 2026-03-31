@@ -1,8 +1,12 @@
 file_format: "1"
 id: avey_p
-name: avey_p
+name: avey_portable
 type: shield
-url: https://
-requires: [nice_nano]
+url: https://github.com/pavey
+requires: [NRF52840]
+exposes: [none]
 features:
   - keys
+  - blt
+siblings:
+  - none
