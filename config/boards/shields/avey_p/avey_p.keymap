@@ -16,7 +16,7 @@
 // ------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  J   |  ,   |  .   |                   |  G   |  D    |  B    |  Y   |   P   |  WIN  |
 // | SHIFT |  I  |  U  |  E   |  O   |  -   |                   |  R   |  T    |  N    |  S   |   H   | SHIFT |
-// | CTRL  |  Z  |  X  |  C   |  V   |  B   |                   |  Z   |  M    |  C    |  X   |   V   | CTRL  |
+// | CTRL  |  Z  |  X  |  C   |  V   |  ;   |                   |  Z   |  M    |  C    |  X   |   V   | CTRL  |
 //               | SQT | EQAL | ALT  |  A   |                   |  K   |  ALT  |  [    |  ]   |
 // |LT1 SP |           | BKSP | DEL  |                                 | TAB   | ENT   |              | LT1 SP|
 bindings = <
@@ -26,6 +26,50 @@ bindings = <
 &kp SQT &kp EQUAL &mt LALT LANG2 &kp A &kp K &mt RALT LANG1 &kp LBKT &kp RBKT
 &lt 1 SPACE &mt LSHFT BSPC &mt LCTRL DEL &mt RCTRL TAB &mt RSHFT ENTER &lt 1 SPACE
 
+            >;
+        };
+        sub_layer {
+// ------------------------------------------------------------------------------------------------------------
+// |  ESC  |  ,  |  7  |  8   |  9   |  .   |                   |  PGUP|  HOME |  MUP  |  END | MACC0 |  WIN  |
+// | SHIFT |  *  |  4  |  5   |  6   |  -   |                   |  PGDN|  MLEFT|  MDWN |MRIGHT| MACC1 | SHIFT |
+// | CTRL  |  `  |  1  |  2   |  3   |  ;   |                   |  MBT3|  LEFT |  UP   |RIGHT | MACC2 | CTRL  |
+//               | SQT | EQAL | ALT  |  0   |                   |  MBT1|  ALT  |  DOWN |PSCR  |
+// |LT2 SP |           | BKSP | DEL  |                                 |  MBT2 | ENT   |              | LT2 SP|
+bindings = <
+&trans &kp COMMA &kp N7 &kp N8 &kp N9 &trans &kp PG_UP &kp HOME &mkp MOVE_UP &kp END &mkp ACCEL0 &trans
+&trans &kp KP_MULTIPLY &kp N4 &kp N5 &kp N6 &trans &kp PG_DN &mkp MOVE_LEFT &mkp MOVE_DOWN &mkp MOVE_RIGHT &mkp ACCEL1 &trans
+&trans &kp KP_PLUS &kp N1 &kp N2 &kp N3 &trans &mkp BTN3 &kp LEFT &kp UP &kp RIGHT &mkp ACCEL2 &trans
+&trans &trans &trans &kp N0 &mkp BTN1 &trans &kp DOWN &kp PSCRN
+&lt 2 SPACE &trans &trans &mkp BTN2 &trans &lt 2 SPACE
+            >;
+        };
+        func_layer {
+// ------------------------------------------------------------------------------------------------------------
+// |  ESC  |  ,  |  F7  |  F8   |  F9   |  .   |                   |  PGUP|  HOME |  MUP  |  END | MACC0 |  WIN  |
+// | SHIFT |  *  |  F4  |  F5   |  F6   |  -   |                   |  PGDN|  MLEFT|  MDWN |MRIGHT| MACC1 | SHIFT |
+// | CTRL  |  `  |  F1  |  F2   |  F3   |  ;   |                   |  MBT3|  LEFT |  UP   |RIGHT | MACC2 | CTRL  |
+//               |  F10 |  F11  |  F12  |  0   |                   |  MBT1|  ALT  |  DOWN |PSCR  |
+// |LT2 SP |            | BKSP  | DEL   |                                 |  MBT2 | ENT   |              | LT2 SP|
+bindings = <
+&trans &kp COMMA &kp F7 &kp F8 &kp F9 &trans &kp PG_UP &kp HOME &mkp MOVE_UP &kp END &mkp ACCEL0 &trans
+&trans &kp KP_MULTIPLY &kp F4 &kp F5 &kp F6 &trans &kp PG_DN &mkp MOVE_LEFT &mkp MOVE_DOWN &mkp MOVE_RIGHT &mkp ACCEL1 &trans
+&trans &kp KP_PLUS &kp F1 &kp F2 &kp F3 &trans &mkp BTN3 &kp LEFT &kp UP &kp RIGHT &mkp ACCEL2 &trans
+ &kp F10  &kp F11  &kp F12 &kp N0 &mkp BTN1 &trans &kp DOWN &kp PSCRN
+&lt 2 SPACE &trans &trans &mkp BTN2 &trans &lt 2 SPACE
+            >;
+        };
+        boot_layer {
+// ------------------------------------------------------------------------------------------------------------
+// | boot  | none  |none | none | none |none |                   | none |none |none |none |none |none |
+// | none  | none  |none | none | none |none |                   | none |none |none |none |none |none |
+// | none  | none  |none | none | none |none |                   | none |none |none |none |none |none |
+//                 |none | none | none |none |                   | none |none |none |none |
+// | none  |             | none | none |                                |none |none |           |none |
+bindings = <
+&bootloader &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
+&none &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
+&none &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
+&none &none &none &none &none 
             >;
         };
     };
