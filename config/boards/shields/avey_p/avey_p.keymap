@@ -54,7 +54,7 @@ bindings = <
 &trans &kp COMMA &kp F7 &kp F8 &kp F9 &trans &kp PG_UP &kp HOME &mkp MOVE_UP &kp END &mkp ACCEL0 &trans
 &trans &kp KP_MULTIPLY &kp F4 &kp F5 &kp F6 &trans &kp PG_DN &mkp MOVE_LEFT &mkp MOVE_DOWN &mkp MOVE_RIGHT &mkp ACCEL1 &trans
 &trans &kp KP_PLUS &kp F1 &kp F2 &kp F3 &trans &mkp BTN3 &kp LEFT &kp UP &kp RIGHT &mkp ACCEL2 &trans
- &kp F10  &kp F11  &kp F12 &kp N0 &mkp BTN1 &trans &kp DOWN &kp PSCRN
+&kp F10  &kp F11  &kp F12 &kp N0 &mkp BTN1 &trans &kp DOWN &kp PSCRN
 &lt 2 SPACE &trans &trans &mkp BTN2 &trans &lt 2 SPACE
             >;
         };
@@ -66,10 +66,11 @@ bindings = <
 //                 |none | none | none |none |                   | none |none |none |none |
 // | none  |             | none | none |                                |none |none |           |none |
 bindings = <
-&bootloader &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
-&none &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
-&none &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
-&none &none &none &none &none 
+&bootloader &none &none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none
+&none &none &none &none &none &none 
             >;
         };
     };
