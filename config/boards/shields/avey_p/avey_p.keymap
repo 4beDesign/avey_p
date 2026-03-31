@@ -21,10 +21,10 @@
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 bindings = <
 &kp ESC &kp Q &kp L &kp SLASH &kp COMMA &kp DOT &kp G &kp D &kp B &kp Y &kp P &kp LGUI
-&mt LSHIFT LEFT &kp I &kp U &kp E &mt LSHIFT O &kp MINUS &kp R &mt RSHIFT T &kp N &kp S &kp H &mt RSHIFT UP
+&mt LSHFT LEFT &kp I &kp U &kp E &mt LSHFT O &kp MINUS &kp R &mt RSHFT T &kp N &kp S &kp H &mt RSHFT UP
 &mt LCTRL RIGHT &kp Z &kp X &kp C &mt LCTRL V &lt 2 SEMI &kp W &mt RCTRL M &kp F &kp J &kp BSLH &mt RCTRL DOWN
 &kp QUOTE &kp EQUAL &mt LALT LANG2 &kp A &kp K &mt RALT LANG1 &kp LBKT &kp RBKT
-&lt 1 SPACE &mt LSHIFT BSPC &mt LCTRL DEL &mt RCTRL TAB &mt RSHIFT ENTER &lt 1 SPACE
+&lt 1 SPACE &mt LSHFT BSPC &mt LCTRL DEL &mt RCTRL TAB &mt RSHFT ENTER &lt 1 SPACE
 
             >;
         };
