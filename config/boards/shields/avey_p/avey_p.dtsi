@@ -41,3 +41,4 @@ RC(4,0)                 RC(4,3) RC(4,4)                                 RC(4,7) 
             ;
     };
 };
+&xiao_i2c { status = "disabled"; };
