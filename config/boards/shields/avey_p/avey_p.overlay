@@ -2,17 +2,6 @@
  * Copyright (c) 2020 Pete Johanson
  *
  * SPDX-License-Identifier: MIT
-
-/ {
-    chosen {
-        zmk,battery = &battery;
-    };
-
-    battery: battery {
-        compatible = "zmk,battery";
-        io-channels = <&adc 0>;
-    };
-};
  */
 
 
