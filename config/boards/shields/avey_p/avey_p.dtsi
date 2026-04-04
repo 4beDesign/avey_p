@@ -11,10 +11,10 @@
         zmk,matrix-transform = &default_transform;
 /*        zmk,physical-layout = &physical-layout0;   */
     };
-　　battery: battery {
-    　　compatible = "zmk,battery";
- 　　   io-channels = <&adc 0>;
-　　};
+battery: battery {
+    compatible = "zmk,battery";
+    io-channels = <&adc 0>;
+};
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
