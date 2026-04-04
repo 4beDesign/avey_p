@@ -41,7 +41,7 @@
 bindings = <
 &kp ESC &kp Q &kp W &kp J &kp COMMA &kp DOT &kp G &kp D &kp B &kp Y &kp P &kp LGUI
 &mt LSHFT LEFT &kp I &kp U &kp E &mt LSHFT O &kp MINUS &kp R &mt RSHFT T &kp N &kp S &kp H &mt RSHFT UP
-&mt LCTRL RIGHT &kp BSLH &kp SLASH &kp F &kp L &mt SEMI &kp Z &mt RCTRL M &kp C &kp X &kp V  &mt RCTRL DOWN
+&mt LCTRL RIGHT &kp BSLH &kp SLASH &kp F &mt LCTRL L &kp SEMI &kp Z &mt RCTRL M &kp C &kp X &kp V  &mt RCTRL DOWN
 &kp SQT &kp EQUAL &mt LALT LANG2 &kp A &kp K &mt RALT LANG1 &kp LBKT &kp RBKT
 &lt 1 SPACE &mt LSHFT BSPC &mt LCTRL DEL &mt RCTRL TAB &mt RSHFT ENTER &lt 1 SPACE
 
