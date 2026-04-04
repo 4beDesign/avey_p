@@ -64,16 +64,16 @@ bindings = <
         };
         func_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  ,  |  F7  |  F8   |  F9   |  .   |                   |  PGUP|  HOME |  MUP  |  END | MACC0 |  WIN  |
-// | SHIFT |  *  |  F4  |  F5   |  F6   |  -   |                   |  PGDN|  MLEFT|  MDWN |MRIGHT| MACC1 | SHIFT |
-// | CTRL  |  `  |  F1  |  F2   |  F3   |  ;   |                   |  MBT3|  LEFT |  UP   |RIGHT | MACC2 | CTRL  |
-//               |  F10 |  F11  |  F12  |  0   |                   |  MBT1|  ALT  |  DOWN |PSCR  |
+// |  ESC  |  ,  |  F7  |  F8   |  F9   |  .   |                   |  BT_0|  BT_1 | BT_2  | BT_3 | BT_4  | BT_CL |
+// | SHIFT |  *  |  F4  |  F5   |  F6   |  -   |                   |BT_Nex| BT_Prv| BT_Dis|note  | none  | none  |
+// | CTRL  |  `  |  F1  |  F2   |  F3   |  ;   |                   |  none|  none |  none |none  | none  | none  |
+//               |  F10 |  F11  |  F12  |  0   |                   |  none|  none |  none |none  |
 // |LT2 SP |            | BKSP  | DEL   |                                 |  MBT2 | ENT   |              | LT2 SP|
 bindings = <
-&trans &kp COMMA &kp F7 &kp F8 &kp F9 &trans &kp PG_UP &kp HOME &mmv MOVE_UP &kp END &kp F1 &trans
-&trans &kp KP_MULTIPLY &kp F4 &kp F5 &kp F6 &trans &kp PG_DN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp F2 &trans
-&trans &kp KP_PLUS &kp F1 &kp F2 &kp F3 &trans &mkp MB3 &kp LEFT &kp UP &kp RIGHT &kp F3 &trans
-&kp F10  &kp F11  &kp F12 &kp N0 &mkp MB1 &trans &kp DOWN &kp PSCRN
+&trans &kp COMMA &kp F7 &kp F8 &kp F9 &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
+&trans &kp KP_MULTIPLY &kp F4 &kp F5 &kp F6 &trans &bt BT_NXT &bt BT_PRV &bt BT_DISC &none &none &none
+&trans &kp KP_PLUS &kp F1 &kp F2 &kp F3 &trans  &none &none &none &none &none &none
+&kp F10  &kp F11  &kp F12 &kp N0  &none &none &none &none
 &lt 2 SPACE &trans &trans &mkp MB2 &trans &lt 2 SPACE
             >;
         };
