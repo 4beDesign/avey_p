@@ -13,7 +13,7 @@
     };
 battery: battery {
     compatible = "zmk,battery";
-    io-channels = <&adc 3>;
+    io-channels = <&adc 4>;
 };
 
     default_transform: keymap_transform_0 {
