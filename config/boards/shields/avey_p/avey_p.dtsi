@@ -10,10 +10,12 @@
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
     };
-    battery: battery {
-        compatible = "zmk,battery";
-        io-channels = <&adc 2>;
-    };
+/*
+*    battery: battery {
+*        compatible = "zmk,battery";
+*        io-channels = <&adc 2>;
+*    };
+*/
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
