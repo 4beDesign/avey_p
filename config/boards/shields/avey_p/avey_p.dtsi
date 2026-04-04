@@ -11,6 +11,7 @@
         zmk,matrix-transform = &default_transform;
 /*        zmk,physical-layout = &physical-layout0;   */
     };
+
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
@@ -41,4 +42,8 @@ RC(4,0)                 RC(4,3) RC(4,4)                                 RC(4,7) 
             , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+};
+battery: battery {
+    compatible = "zmk,battery";
+    io-channels = <&adc 0>;
 };
