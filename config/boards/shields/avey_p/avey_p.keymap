@@ -77,20 +77,5 @@ bindings = <
 &lt 2 SPACE &trans &trans &mkp MB2 &trans &lt 2 SPACE
             >;
         };
-        boot_layer {
-// ------------------------------------------------------------------------------------------------------------
-// | boot  | none  |none | none | none |none |                   | none |none |none |none |none |none |
-// | none  | none  |none | none | none |none |                   | none |none |none |none |none |none |
-// | none  | none  |none | none | none |none |                   | none |none |none |none |none |none |
-//                 |none | none | none |none |                   | none |none |none |none |
-// | none  |             | none | none |                                |none |none |           |none |
-bindings = <
-&bootloader &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none
-&none &none &none &none &none &none 
-            >;
-        };
     };
 };
