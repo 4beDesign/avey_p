@@ -35,13 +35,13 @@
 // ------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  J   |  ,   |  .   |                   |  G   |  D    |  B    |  Y   |   P   |  WIN  |
 // | SHIFT |  I  |  U  |  E   |  O   |  -   |                   |  R   |  T    |  N    |  S   |   H   | SHIFT |
-// | CTRL  |  Z  |  X  |  C   |  V   |  ;   |                   |  Z   |  M    |  C    |  X   |   V   | CTRL  |
+// | CTRL  |  \  |  /  |  F   |  L   |  ;   |                   |  Z   |  M    |  C    |  X   |   V   | CTRL  |
 //               | SQT | EQAL | ALT  |  A   |                   |  K   |  ALT  |  [    |  ]   |
 // |LT1 SP |           | BKSP | DEL  |                                 | TAB   | ENT   |              | LT1 SP|
 bindings = <
-&kp ESC &kp Q &kp L &kp SLASH &kp COMMA &kp DOT &kp G &kp D &kp B &kp Y &kp P &kp LGUI
+&kp ESC &kp Q &kp W &kp J &kp COMMA &kp DOT &kp G &kp D &kp B &kp Y &kp P &kp LGUI
 &mt LSHFT LEFT &kp I &kp U &kp E &mt LSHFT O &kp MINUS &kp R &mt RSHFT T &kp N &kp S &kp H &mt RSHFT UP
-&mt LCTRL RIGHT &kp Z &kp X &kp C &mt LCTRL V &kp SEMI &kp W &mt RCTRL M &kp F &kp J &kp BSLH &mt RCTRL DOWN
+&mt LCTRL RIGHT &kp BSLH &kp SLASH &kp F &kp L &mt SEMI &kp Z &mt RCTRL M &kp C &kp X &kp V  &mt RCTRL DOWN
 &kp SQT &kp EQUAL &mt LALT LANG2 &kp A &kp K &mt RALT LANG1 &kp LBKT &kp RBKT
 &lt 1 SPACE &mt LSHFT BSPC &mt LCTRL DEL &mt RCTRL TAB &mt RSHFT ENTER &lt 1 SPACE
 
